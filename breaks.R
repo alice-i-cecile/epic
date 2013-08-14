@@ -40,5 +40,5 @@ step_df <- do.call(rbind, step_list)
 step_plot <- ggplot(step_df, aes(x=value, y=Index)) + geom_line() + facet_wrap(facets="variable", scales="free_x", ncol=5) + xlab("Value") + theme_bw()
 
 # Saving figures ####
-ggsave("break_point_plot.pdf", point_plot, width=6, height=4)
-ggsave("break_step_plot.pdf", step_plot, width=6, height=4)
+ggsave("break_point_plot.pdf", point_plot, width=11, height=8.5)
+ggsave("break_step_plot.pdf", step_plot, width=11, height=8.5)
